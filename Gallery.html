@@ -4,54 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="Css/gallery.css">
+    <link rel="stylesheet" href="Css/styles.css">
 </head>
 <body>
+    <h1 style="text-align:center; color:white;">Gallery</h1>
 
-    <!-- Folder 1: Nature -->
-<h2>Nature</h2>
-<div class="gallery">
-    <div class="gallery-item">
-        <img src="https://drive.google.com/uc?export=view&id=1XYZ1234" alt="Nature Image 1" class="gallery-img">
-    </div>
-    <div class="gallery-item">
-        <img src="https://drive.google.com/uc?export=view&id=2ABC5678" alt="Nature Image 2" class="gallery-img">
-    </div>
-</div>
+    <div id="content">
+        <!-- Folder 1 -->
+        <div class="folder">
+            <h2 style="color: white; text-align: center;">Folder 1</h2>
+            <div class="gallery-item">
+                <img src="gallery/folder1/image1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery/folder1/image2.jpg" alt="Image 2">
+            </div>
+        </div>
 
-<!-- Folder 2: Animals -->
-<h2>Animals</h2>
-<div class="gallery">
-    <div class="gallery-item">
-        <img src="https://drive.google.com/uc?export=view&id=3DEF9012" alt="Animal Image 1" class="gallery-img">
-    </div>
-    <div class="gallery-item">
-        <img src="https://drive.google.com/uc?export=view&id=4GHI3456" alt="Animal Image 2" class="gallery-img">
-    </div>
-</div>
-
-<!-- Folder 3: Architecture -->
-<h2>Architecture</h2>
-<div class="gallery">
-    <div class="gallery-item">
-        <img src="https://drive.google.com/uc?export=view&id=5JKL6789" alt="Architecture Image 1" class="gallery-img">
-    </div>
-    <div class="gallery-item">
-        <img src="https://drive.google.com/uc?export=view&id=6MNO1230" alt="Architecture Image 2" class="gallery-img">
-    </div>
-</div>
-
-        <!-- Add more items as needed -->
+        <!-- Folder 2 -->
+        <div class="folder">
+            <h2 style="color: white; text-align: center;">Folder 2</h2>
+            <div class="gallery-item">
+                <img src="gallery/folder2/image3.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery/folder2/image4.jpg" alt="Image 4">
+            </div>
+        </div>
     </div>
 
-    <!-- Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div id="caption"></div>
-    </div>
-
-    <script src="js/gallery.js"></script>
 </body>
-              </html>
-              
+</html>
