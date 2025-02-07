@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    background: rgb(238,174,202);
+    background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#gallery .img-fluid {
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Tic-Tac-Toe Game */
+#tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    width: 350px;
+    text-align: center;
+}
+
+#tic-tac-toe .cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#tic-tac-toe .cell:hover {
+    background-color: #f0f0f0;
+}
+
+/* Photo Editor Section */
+#tools {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#tools input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#tools canvas {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Footer Styles */
+.footer-basic {
+    padding: 40px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer-basic .social a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    opacity: 0.75;
+}
+
+.footer-basic .social a:hover {
+    opacity: 1;
+}
+
+.footer-basic .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Animation */
+.animation1 {
+    animation: waqar 8s linear 0s infinite;
+    text-align: center;
+    font-size: 36px;
+}
+
+@keyframes waqar {
+    0% { color: red; }
+    10% { color: yellow; }
+    20% { color: purple; }
+    30% { color: teal; }
+    40% { color: olive; }
+    50% { color: green; }
+    60% { color: red; }
+    70% { color: aqua; }
+    80% { color: silver; }
+    90% { color: pink; }
+    100% { color: red; }
+}
